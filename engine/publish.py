@@ -95,7 +95,7 @@ def build_site(root, cfg):
 
     def card(a):
         return (
-            f'<a class="card" href="/articles/{a["slug"]}.html">\n'
+            f'<a class="card" href="__REL__articles/{a["slug"]}.html">\n'
             f'  <h3>{html.escape(a["title"])}</h3>\n'
             f'  <p>{html.escape(a["desc"])}</p>\n'
             f'  <span class="meta">{a["date"]} · {a["rt"]} دقائق قراءة</span>\n'
@@ -132,6 +132,7 @@ def build_site(root, cfg):
             .replace("__SHARE_URL__", quote(share_raw, safe=""))
             .replace("__RELATED__", related)
             .replace("__CONTENT__", content)
+            .replace("__REL__", "../")
         )
         with open(os.path.join(articles_dir, a["slug"] + ".html"), "w", encoding="utf-8") as f:
             f.write(page)
@@ -144,6 +145,7 @@ def build_site(root, cfg):
         .replace("__OG_IMAGE__", og_image)
         .replace("__ARTICLE_COUNT__", str(count))
         .replace("__CARDS__", "\n".join(card(a) for a in items))
+        .replace("__REL__", "")
     )
     with open(os.path.join(out, "index.html"), "w", encoding="utf-8") as f:
         f.write(index)
@@ -162,6 +164,7 @@ def build_site(root, cfg):
                 .replace("__EMAIL__", html.escape(cfg.get("contact_email", "")))
                 .replace("__ARTICLE_COUNT__", str(count))
                 .replace("__DATE__", datetime.date.today().isoformat())
+                .replace("__REL__", "")
             )
             with open(os.path.join(out, fn), "w", encoding="utf-8") as f:
                 f.write(page)
