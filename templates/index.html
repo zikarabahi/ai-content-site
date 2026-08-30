@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__SITE_NAME__ — __TAGLINE__</title>
+<meta name="description" content="__TAGLINE__. مقالات عملية تُنشر يوميًا حول أدوات الذكاء الاصطناعي وكيفية تحويلها إلى إنتاجية ودخل.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="__SITE_NAME__">
+<meta property="og:title" content="__SITE_NAME__ — __TAGLINE__">
+<meta property="og:description" content="__TAGLINE__">
+<meta property="og:url" content="__URL__">
+<meta property="og:image" content="__OG_IMAGE__">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="__URL__">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="/"><span class="bolt">⚡</span>__SITE_NAME__</a>
+    <nav>
+      <a href="/#latest">المقالات</a>
+      <a href="/about.html">عن الموقع</a>
+      <a href="/contact.html">تواصل</a>
+      <a href="/privacy.html">الخصوصية</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <span class="badge">⚡ محتوى عملي · يتجدد يوميًا · بلا حشو</span>
+    <h1>__TAGLINE__</h1>
+    <p class="lead">نختبر الأدوات ونشرحها بالعربية: ماذا تفعل فعلًا، متى تستخدمها، وكيف تحولها إلى إنتاجية — أو دخل. مقالات تُكتب بمساعدة الذكاء الاصطناعي وتُفحص قبل النشر.</p>
+    <div class="stats">
+      <div class="stat"><b>__ARTICLE_COUNT__</b><span>مقالًا منشورًا</span></div>
+      <div class="stat"><b>يوميًا</b><span>مقال جديد تلقائيًا</span></div>
+      <div class="stat"><b>0$</b><span>تكلفة القراءة</span></div>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section class="section container" id="latest">
+    <div class="section-head">
+      <h2>أحدث المقالات</h2>
+      <span style="color:var(--muted); font-size:.9rem">__ARTICLE_COUNT__ مقالًا</span>
+    </div>
+    <div class="cards">
+__CARDS__
+    </div>
+  </section>
+
+  <section class="section container" style="padding-top:0">
+    <div class="newsletter-band">
+      <div>
+        <h2>النشرة الأسبوعية</h2>
+        <p>كل أحد: 3 أدوات جديدة، دليل عملي واحد، صفر ضجيج.</p>
+      </div>
+      <div style="flex:1; max-width:460px;">
+        <form class="newsletter-form" onsubmit="return false">
+          <input type="email" placeholder="بريدك الإلكتروني" aria-label="البريد الإلكتروني">
+          <button type="submit">اشترك</button>
+        </form>
+        <span class="newsletter-note">يفتح التسجيل فور ربط خدمة الإرسال — المحتوى جاهز.</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>⚡ __SITE_NAME__</h4>
+        <p>__TAGLINE__. مقالات تُكتب بمساعدة الذكاء الاصطناعي ثم تُفحص في اللغة والحقائق والقيمة قبل النشر.</p>
+      </div>
+      <div>
+        <h4>الموقع</h4>
+        <a href="/about.html">عن الموقع</a>
+        <a href="/contact.html">تواصل معنا</a>
+        <a href="/privacy.html">سياسة الخصوصية</a>
+      </div>
+      <div>
+        <h4>إفصاح</h4>
+        <p style="font-size:.85rem">بعض الروابط في المقالات روابط عمولة مذكورة بوضوح، ولا ترفع تكلفة الشراء عليك.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>__SITE_NAME__ © __YEAR__ — جميع الحقوق محفوظة.</span>
+      <span>صُنع بذكاء، وفُحص بإنسان.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

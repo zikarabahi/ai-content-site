@@ -1,0 +1,7 @@
+__pycache__/
+.env
+site-netlify.zip
+site-preview.html
+.github/
+auto-publish.yml
+site-final.zip

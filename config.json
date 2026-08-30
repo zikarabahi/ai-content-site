@@ -1,0 +1,15 @@
+{
+  "site_name": "ذكاء ربحي",
+  "tagline": "دليلك العملي لأدوات ومهارات الذكاء الاصطناعي",
+  "niche": "أدوات ومهارات الذكاء الاصطناعي",
+  "base_url": "https://zikarabahi.github.io/ai-content-site",
+  "language": "ar",
+  "articles_per_run": 1,
+  "contact_email": "info@zika-rabahi.com",
+  "llm": {
+    "api_base": "https://api.groq.com/openai/v1",
+    "model": "openai/gpt-oss-120b",
+    "api_key_env": "GROQ_API_KEY"
+  },
+  "adsense_slot": ""
+}
